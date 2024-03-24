@@ -10,6 +10,11 @@
   },
   "content_scripts": [
     {
+      "matches": ["https://dictionary.cambridge.org/*"],
+      "js": ["websites/cambridge/index.js"],
+      "all_frames": true
+    },
+    {
       "matches": ["*://www.duolingo.com/*"],
       "js": ["websites/duolingo/index.js"],
       "all_frames": true
